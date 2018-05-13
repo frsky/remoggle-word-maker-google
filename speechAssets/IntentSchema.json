@@ -1,0 +1,56 @@
+{
+
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "sure"
+                    ]
+                },
+                {
+                    "name": "howmany",
+                    "slots": [],
+                    "samples": [
+                        "how many words it can make",
+                        "how many words it has",
+                        "how many words can it make",
+                        "how many words can you make",
+                        "how many words do you have"
+                    ]
+                },
+                {
+                    "name": "randomword",
+                    "slots": [],
+                    "samples": [
+                        "make up a word",
+                        "give me a random word",
+                        "a made-up word",
+                        "a fake word",
+                        "invent a new word",
+                        "give me a fake word",
+                        "give me a made-up word",
+                        "make a word for me",
+                        "give me a nonsense word",
+                        "a nonsense word"
+                    ]
+                }
+            ],
+            "types": []
+
+}

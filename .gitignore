@@ -1,0 +1,11 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node Stuff
+node_modules
+
+# do not commit your creds
+
+config/runtime.js

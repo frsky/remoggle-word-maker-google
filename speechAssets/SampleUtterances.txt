@@ -1,0 +1,3 @@
+Alexa, ask word maker for a made up word.
+Alexa, tell word maker to invent a new word.
+Alexa, ask word maker for a nonsense word.
