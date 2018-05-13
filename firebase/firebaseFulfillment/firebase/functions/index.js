@@ -53,9 +53,9 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     //  for (var i = 1; i < thisWord.length; i++) {
     //  spelled = spelled + ', ' + thisWord.charAt(i);
     //  }
-
-            wordOutput = wordOutput + ' Your new word is ' + thisWord + '. <say-as interpret-as="verbatim">' + thisWord + '</say-as>, ' + thisWord + '. ' + sayRepeat() + '</speak>'; 
-            var txtOutput = 'Your new word is ' + thisWord + '.';
+            var thisRepeat = sayRepeat();
+            wordOutput = wordOutput + ' Your new word is ' + thisWord + '. <say-as interpret-as="verbatim">' + thisWord + '</say-as>, ' + thisWord + '. ' + thisRepeat + '</speak>'; 
+            var txtOutput = 'Your new word is ' + thisWord + '. ' + thisRepeat;
     
     // agent.add(wordOutput);
     // console.log(wordOutput);
@@ -95,8 +95,9 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
            // for (var i = 1; i < thisWord.length; i++) {
            // spelled = spelled + ', ' + thisWord.charAt(i);
            //  }
-            wordOutput = wordOutput + ' Your new word is ' + thisWord + '. <say-as interpret-as="verbatim">' + thisWord + '</say-as>, ' + thisWord + '. ' + sayRepeat() + '</speak>'; 
-            var txtOutput = ' Welcome to My Word Maker. Your new word is ' + thisWord + '.';
+            var thisRepeat = sayRepeat();
+            wordOutput = wordOutput + ' Your new word is ' + thisWord + '. <say-as interpret-as="verbatim">' + thisWord + '</say-as>, ' + thisWord + '. ' + thisRepeat + '</speak>'; 
+            var txtOutput = ' Welcome to My Word Maker. Your new word is ' + thisWord + '. ' + thisRepeat;
     
     agent.add(new Text({
         ssml: wordOutput,
